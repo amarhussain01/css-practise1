@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: magenta;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: magenta;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  background-color: magenta;
+  display: flex;
+  align-items: center;
+    
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+   display: flex;
+    margin: auto;
+    justify-content: end;
+    
+    
+  padding: 2px 16px;
+
+}
+img {
+    display: flex;
+    align-items: end;
+    border-radius: 50%;
+    
+}
+h4,p {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: magenta;
+  padding: 10px;
+}
+.grid-item {
+  background-color: magenta;
+  border: 3px solid white;
+
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  background-color: magenta;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><b>Amar Hussain</b></h1>
+</div>
+
+
+<div class="container">
+<div class="card">
+    <img src="./images/amar23.jpg" alt="Amar" style="width:175px" height="180px">
+    <div class="container">
+      <h4><b>Amar Hussain</b></h4> 
+      <p>Trainee/Junior Web Developer</p> 
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">c</div>
+</div>
+
+<h3>Columns</h3>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. 
+</div>
+
+</body>
+</html>
+
+
